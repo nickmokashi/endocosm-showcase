@@ -82,9 +82,10 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 Version 0.3.0, for Windows, with a per-user installer and no admin prompt.
 The Guide, Artifact and mapper flows pass all ten headless scenarios with
 scratch worlds, alongside 99 page tests and 95 Rust tests (2 deliberate checks
-ignored). The installed 0.3.0 program passes its visible first-launch and reopen
-checks, verified 7 October 2026. Each closes its scratch world as one complete
-file; the checks leave real credentials untouched.
+ignored). Native Windows installation, Installed Apps registration, desktop
+shortcut/icon, and launch/reopen of a saved world are verified on 7 October
+2026. Separate automated executable checks close scratch worlds as complete
+files. Full data-deletion uninstall validation remains pending.
 
 The code is private.
 
