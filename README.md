@@ -80,9 +80,11 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 ## Status
 
 Version 0.3.0, for Windows, with a per-user installer and no admin prompt.
-The Guide, Artifact and mapper flows pass headless checks with scratch worlds.
-The new installer is built; its visible first-launch and reopen checks remain
-pending. Version 0.2.1 was previously tested as an installed program.
+The Guide, Artifact and mapper flows pass all ten headless scenarios with
+scratch worlds, alongside 99 page tests and 95 Rust tests (2 deliberate checks
+ignored). The installed 0.3.0 program passes its visible first-launch and reopen
+checks, verified 7 October 2026. Each closes its scratch world as one complete
+file; the checks leave real credentials untouched.
 
 The code is private.
 
