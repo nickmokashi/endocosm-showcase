@@ -2,9 +2,28 @@
 
 ### The universe expands outward. This one expands inward.
 
-![The threshold: enter, begin with three questions, or bring in what you already have](shots/01-threshold.png)
+![The threshold: Begin with the Guide, or Enter to look at the Artifact](shots/01-threshold.png)
 
 ENDOCOSM is a Windows program that turns what a person keeps (journal entries, memories, beliefs, dreams, questions) into a world they can walk through. Everything kept becomes a light in the place it belongs. Your world is kept on your own computer, AI is off unless you turn it on, and nothing leaves the computer unless you send it.
+
+## The Artifact and the Guide
+
+![The Artifact before anything is kept](shots/07-artifact-bare.png)
+
+You arrive at a gyroscope above the hearth: Body, Mind and Soul around a
+floating centre. Its rings, shell, satellites and haze come from what you
+have kept. Each part explains itself in words.
+
+![The Guide asks its first question](shots/08-guide-question.png)
+
+The Guide asks one question at a time. Keep the answer, skip the question,
+or leave it for later. Every answer becomes an ordinary entry and changes
+the Artifact. The questions live in the app and work with AI off.
+
+![The Artifact after an opening round](shots/09-artifact-after-round.png)
+
+Walk returns you to the world. E at the hearth returns to the Artifact.
+The Record still lets you write freely, through In your own words.
 
 ## A world you walk through
 
@@ -38,9 +57,21 @@ Everything you keep is written down in the Record, and each entry is also a ligh
 ## Private by design
 
 * **One world, one file, on your computer.** It never lives inside the program folder, and uninstalling leaves it in place unless you choose otherwise.
-* **Optional AI, off by default.** Bring your own key, which is kept in Windows Credential Manager. Every run is previewed first, and nothing it suggests counts until you accept it.
+* **Optional AI, off by default.** Add named mappers, each with its own key, model and strategy. Keys are kept in Windows Credential Manager before testing, so a failed test loses nothing. Every run is previewed first; findings change your world when you accept them.
 * **The Library:** chats and documents you bring in (a ChatGPT or Claude export, your own notes and documents) are never part of your world until you keep something from them.
 * **Safekeeping:** backups, exports (optionally locked) and restore.
+
+## Several readings of the same Artifact
+
+![Mapper settings, each with its own key and strategy](shots/10-mappers.png)
+
+Map me asks an enabled mapper to read permitted material across the realms.
+You see every item, destination and cost estimate before sending it.
+
+![A mapper reading drawn apart in violet](shots/11-reading-overlay.png)
+
+Readings sit beside the Artifact in dashed violet and can be hidden. A mapper
+can offer questions for the next Guide round; its name stays with the answer.
 
 ## How it is tested
 
@@ -48,7 +79,10 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.2.1, for Windows, installed per user with no admin prompt. Every stage of its build plan is built and tested, including the installed program itself.
+Version 0.3.0, for Windows, with a per-user installer and no admin prompt.
+The Guide, Artifact and mapper flows pass headless checks with scratch worlds.
+The new installer is built; its visible first-launch and reopen checks remain
+pending. Version 0.2.1 was previously tested as an installed program.
 
 The code is private.
 
