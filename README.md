@@ -114,9 +114,11 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.4.3, for Windows, with a per-user installer and no admin prompt
-(8 October 2026). All 18 headless scenarios pass with scratch worlds, alongside
-190 page tests and 124 Rust tests (2 deliberate checks ignored). The built
+Version 0.4.4, for Windows, with a per-user installer and no admin prompt
+(9 October 2026). All 19 headless scenarios pass with scratch worlds, alongside
+193 page tests and 124 Rust tests (2 deliberate checks ignored). The mouse wheel
+now brings you properly close, around the Artifact and right up to a structure
+in the garden, in gentle gliding steps. The built
 program was checked directly: a whole live conversation through its own
 microphone path and security policy against a stand-in for ElevenLabs, the
 trip, a 24-second film, real save dialogs, the Gallery, a PNG export, and a
