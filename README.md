@@ -6,6 +6,32 @@
 
 ENDOCOSM is a Windows program that turns what a person keeps (journal entries, memories, beliefs, dreams, questions) into a world they can walk through. Everything kept becomes a light in the place it belongs. Your world is kept on your own computer, AI is off unless you turn it on, and nothing leaves the computer unless you send it.
 
+## New in 0.4.2: the world is a trip
+
+![The hearth, deep in the trip](shots/12-the-trip.png)
+
+The whole world is drawn as a DMT-style journey: breathing geometry, colour that flows toward violet, magenta, cyan and gold, a honeycomb of form constants that turns into tunnels toward the centre, a kaleidoscope gathering at the edges, and a hyperspace mandala overhead. It draws on published accounts of the experience and on the mathematics of geometric visions, as artistic reference only.
+
+![The living garden in the trip](shots/13-trip-garden.png)
+
+**Nothing on screen flashes.** Colour turns around brightness rather than changing it, the patterns that add light are faint and slow, and the automated checks measure every small block of real rendered frames against the WCAG three-flashes rule. Trip intensity is a setting, and Reduce motion stills the movement while keeping the colour.
+
+## A Guide that leads, and lets you wander
+
+![The Guide offering directions, and a way off the path](shots/14-guide-leads.png)
+
+After each step (arriving, keeping something, a change to the world, an export, a long quiet) a small card offers two or three next moves and always "I'll find my own way". Press G for a direction at any time. Guided exploration with real choice is what the learning and play research supports, so the Guide leads most of the time and never insists.
+
+## Inner journeys and the Gallery
+
+![Reviewing a three-chapter inner journey](shots/15-journey.png)
+
+A journey travels through three of your own themes: awareness, association, integration. You choose the places and write the words; the scenes are captured from your world. It saves itself as you go, and leaves as an offline interactive page or a 24-second film with music from your own saved loops.
+
+![The Gallery: journeys in progress and finished work](shots/16-gallery.png)
+
+The Gallery keeps journeys in progress and every finished export, with the words you approved. Removing something from the list never deletes its file.
+
 ## The Artifact and the Guide
 
 ![The Artifact before anything is kept](shots/07-artifact-bare.png)
@@ -60,6 +86,7 @@ Everything you keep is written down in the Record, and each entry is also a ligh
 * **Optional AI, off by default.** Add named mappers, each with its own key, model and strategy. Keys are kept in Windows Credential Manager before testing, so a failed test loses nothing. Every run is previewed first; findings change your world when you accept them.
 * **The Library:** chats and documents you bring in (a ChatGPT or Claude export, your own notes and documents) are never part of your world until you keep something from them.
 * **Safekeeping:** backups, exports (optionally locked) and restore.
+* **Music only from ElevenLabs, only when you approve it.** A new world is silent. A small library of short loops is generated once, after a review that shows the cost, and then reused for every buildup, drop and remix without generating again.
 
 ## Several readings of the same Artifact
 
@@ -79,18 +106,18 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.3.0, for Windows, with a per-user installer and no admin prompt.
-The Guide, Artifact and mapper flows pass all ten headless scenarios with
-scratch worlds, alongside 99 page tests and 95 Rust tests (2 deliberate checks
-ignored). Native Windows installation, Installed Apps registration, desktop
-shortcut/icon, and launch/reopen of a saved world are verified on 7 October
-2026. Separate automated executable checks close scratch worlds as complete
-files. Full data-deletion uninstall validation remains pending.
+Version 0.4.2, for Windows, with a per-user installer and no admin prompt
+(8 October 2026). All 17 headless scenarios pass with scratch worlds, alongside
+179 page tests and 119 Rust tests (2 deliberate checks ignored). The built
+program was checked directly: the trip, a 24-second film, real save dialogs
+(cancel and save), the Gallery, a PNG export, and a world, its grammar and its
+settings surviving a restart. Real ElevenLabs account audio and live two-way
+voice are not part of this release.
 
 The code is private.
 
 ---
 
-**Built by Greygray with AI collaboration openly included in the process.**
+**Created by Greygray, with AI openly part of the process.**
 
 Human judgment stays in the driver's seat.
