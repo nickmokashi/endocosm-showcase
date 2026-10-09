@@ -6,6 +6,14 @@
 
 ENDOCOSM is a Windows program that turns what a person keeps (journal entries, memories, beliefs, dreams, questions) into a world they can walk through. Everything kept becomes a light in the place it belongs. Your world is kept on your own computer, AI is off unless you turn it on, and nothing leaves the computer unless you send it.
 
+## New in 0.4.3: talk with the world, live
+
+![Talking live with an inhabitant, deep in the trip](shots/17-live-talk.png)
+
+Talk with an inhabitant out loud, as it happens. It answers in your own cloned voice, and you can talk over it whenever you like: the reply stops at once. A transcript builds as you go, the orb breathes with your voice, and the music steps back while you talk.
+
+Before anything is sent you see which of your records it will hear (protected ones stay out), the exact instructions it receives, roughly what a minute costs, and how long it may run. The microphone turns off when you end, when the time is up, when you close the panel or when the window is hidden. Nothing said is kept unless you keep the transcript. The conversation runs on ElevenLabs Agents; the key stays out of the page, which only ever holds a short-lived address for one conversation.
+
 ## New in 0.4.2: the world is a trip
 
 ![The hearth, deep in the trip](shots/12-the-trip.png)
@@ -106,13 +114,14 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.4.2, for Windows, with a per-user installer and no admin prompt
-(8 October 2026). All 17 headless scenarios pass with scratch worlds, alongside
-179 page tests and 119 Rust tests (2 deliberate checks ignored). The built
-program was checked directly: the trip, a 24-second film, real save dialogs
-(cancel and save), the Gallery, a PNG export, and a world, its grammar and its
-settings surviving a restart. Real ElevenLabs account audio and live two-way
-voice are not part of this release.
+Version 0.4.3, for Windows, with a per-user installer and no admin prompt
+(8 October 2026). All 18 headless scenarios pass with scratch worlds, alongside
+190 page tests and 124 Rust tests (2 deliberate checks ignored). The built
+program was checked directly: a whole live conversation through its own
+microphone path and security policy against a stand-in for ElevenLabs, the
+trip, a 24-second film, real save dialogs, the Gallery, a PNG export, and a
+world, its grammar and its settings surviving a restart. A conversation with a
+real ElevenLabs account is the one thing still to be tried.
 
 The code is private.
 
