@@ -6,19 +6,25 @@
 
 ENDOCOSM is a Windows program that turns what a person keeps (journal entries, memories, beliefs, dreams, questions) into a world they can walk through. Everything kept becomes a light in the place it belongs. Your world is kept on your own computer, AI is off unless you turn it on, and nothing leaves the computer unless you send it.
 
-## New in 0.4.5: chat with the inhabitants
+## New in 0.4.6: a coach that teaches, and a chat like any chat
+
+![The coach's first step, with only Guide and Settings on the top bar](shots/19-coach.png)
+
+A newcomer is taught one exact step at a time: the key to press or the button to click, which glows. Each step is learned by doing it, so someone who already knows a shortcut is never taught it, and the top bar starts with just Guide and Settings, gaining each tool as its step is taught. After a while on one step the coach says more and offers to do it. "I've got this" moves on, "I know my way around" shows everything at once, and the lessons can start again from Settings. It follows the learning research: plenty of guidance at first, fading as each skill is learned, given where it is needed.
 
 ![Typing with an inhabitant, deep in the trip (a test conversation)](shots/18-chat.png)
 
-Open AI inhabitants and type. Enter sends, the reply appears, and the conversation remembers itself, through the AI you set up: Claude, OpenAI, or a model on your own computer. The first message shows once where it goes, which of your records go with it and what a message can cost; after that, every Enter just sends. Keep the conversation and it becomes an ordinary entry.
+**Chat** works like any chat: the thread above, the box below, Enter to send, through the AI you set up (Claude, OpenAI, or a model on your own computer). The microphone beside the box carries the same conversation on out loud. The inhabitants also know the app: ask one how anything works and it answers step by step. The music library now grows to 24 loops, made only after a review of the cost.
 
-The music changed too: every saved loop now takes its turn, something new arrives every section or two, and a tempo or pitch change comes in on the next section instead of restarting the song.
+## New in 0.4.5: every loop plays
+
+Every saved loop takes its turn, something new arrives every section or two, and a tempo or pitch change comes in on the next section instead of restarting the song.
 
 ## New in 0.4.3: talk with the world, live
 
-![Talking live with an inhabitant, deep in the trip](shots/17-live-talk.png)
+![Talking out loud with an inhabitant, inside the chat, deep in the trip (a test conversation)](shots/17-live-talk.png)
 
-Talk with an inhabitant out loud, as it happens. It answers in your own cloned voice, and you can talk over it whenever you like: the reply stops at once. A transcript builds as you go, the orb breathes with your voice, and the music steps back while you talk.
+Press the microphone in Chat and talk with an inhabitant out loud, as it happens. It answers in your own cloned voice, and you can talk over it whenever you like: the reply stops at once. What is said lands in the same thread as what was typed, the orb breathes with your voice, and the music steps back while you talk. Talking out loud is the only thing ElevenLabs does in a conversation; typing never touches it.
 
 Before anything is sent you see which of your records it will hear (protected ones stay out), the exact instructions it receives, roughly what a minute costs, and how long it may run. The microphone turns off when you end, when the time is up, when you close the panel or when the window is hidden. Nothing said is kept unless you keep the transcript. The conversation runs on ElevenLabs Agents; the key stays out of the page, which only ever holds a short-lived address for one conversation.
 
@@ -102,7 +108,7 @@ Everything you keep is written down in the Record, and each entry is also a ligh
 * **Optional AI, off by default.** Add named mappers, each with its own key, model and strategy. Keys are kept in Windows Credential Manager before testing, so a failed test loses nothing. Every run is previewed first; findings change your world when you accept them.
 * **The Library:** chats and documents you bring in (a ChatGPT or Claude export, your own notes and documents) are never part of your world until you keep something from them.
 * **Safekeeping:** backups, exports (optionally locked) and restore.
-* **Music only from ElevenLabs, only when you approve it.** A new world is silent. A small library of short loops is generated once, after a review that shows the cost, and then reused for every buildup, drop and remix without generating again.
+* **Music only from ElevenLabs, only when you approve it.** A new world is silent. A library of up to 24 short loops is generated once, after a review that shows the cost, and then reused for every buildup, drop and remix without generating again.
 
 ## Several readings of the same Artifact
 
@@ -122,17 +128,17 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.4.5, for Windows, with a per-user installer and no admin prompt
-(10 October 2026). All 21 headless scenarios pass with scratch worlds, alongside
-198 page tests and 126 Rust tests (2 deliberate checks ignored). Every saved
-loop now takes its turn in the music, tempo changes come in on the next section,
-the inhabitants can be chatted with by typing, Walk is on the toolbar, and a
-ChatGPT or Claude export comes in from Settings. The built
-program was checked directly: a whole live conversation through its own
-microphone path and security policy against a stand-in for ElevenLabs, the
-trip, a 24-second film, real save dialogs, the Gallery, a PNG export, and a
-world, its grammar and its settings surviving a restart. A conversation with a
-real ElevenLabs account is the one thing still to be tried.
+Version 0.4.6, for Windows, with a per-user installer and no admin prompt
+(10 October 2026). All 22 headless scenarios pass with scratch worlds, alongside
+196 page tests and 126 Rust tests (2 deliberate checks ignored). A coach now
+teaches newcomers one step at a time and the top bar grows with them, Chat
+works like any chat with the microphone beside the box, the inhabitants can
+explain the app, and the music library grows to 24 loops. The built program
+was checked directly: typed chat through a stand-in model, a whole live
+conversation through its own microphone path and security policy against a
+stand-in for ElevenLabs, the trip, a 24-second film, real save dialogs, the
+Gallery, a PNG export, the mouse wheel, and a world surviving a restart. A
+conversation with a real ElevenLabs account is the one thing still to be tried.
 
 The code is private.
 
