@@ -6,6 +6,14 @@
 
 ENDOCOSM is a Windows program that turns what a person keeps (journal entries, memories, beliefs, dreams, questions) into a world they can walk through. Everything kept becomes a light in the place it belongs. Your world is kept on your own computer, AI is off unless you turn it on, and nothing leaves the computer unless you send it.
 
+## New in 0.4.5: chat with the inhabitants
+
+![Typing with an inhabitant, deep in the trip (a test conversation)](shots/18-chat.png)
+
+Open AI inhabitants and type. Enter sends, the reply appears, and the conversation remembers itself, through the AI you set up: Claude, OpenAI, or a model on your own computer. The first message shows once where it goes, which of your records go with it and what a message can cost; after that, every Enter just sends. Keep the conversation and it becomes an ordinary entry.
+
+The music changed too: every saved loop now takes its turn, something new arrives every section or two, and a tempo or pitch change comes in on the next section instead of restarting the song.
+
 ## New in 0.4.3: talk with the world, live
 
 ![Talking live with an inhabitant, deep in the trip](shots/17-live-talk.png)
@@ -114,11 +122,12 @@ Whole scenarios run end to end in an invisible browser, against the real model c
 
 ## Status
 
-Version 0.4.4, for Windows, with a per-user installer and no admin prompt
-(9 October 2026). All 19 headless scenarios pass with scratch worlds, alongside
-193 page tests and 124 Rust tests (2 deliberate checks ignored). The mouse wheel
-now brings you properly close, around the Artifact and right up to a structure
-in the garden, in gentle gliding steps. The built
+Version 0.4.5, for Windows, with a per-user installer and no admin prompt
+(10 October 2026). All 21 headless scenarios pass with scratch worlds, alongside
+198 page tests and 126 Rust tests (2 deliberate checks ignored). Every saved
+loop now takes its turn in the music, tempo changes come in on the next section,
+the inhabitants can be chatted with by typing, Walk is on the toolbar, and a
+ChatGPT or Claude export comes in from Settings. The built
 program was checked directly: a whole live conversation through its own
 microphone path and security policy against a stand-in for ElevenLabs, the
 trip, a 24-second film, real save dialogs, the Gallery, a PNG export, and a
